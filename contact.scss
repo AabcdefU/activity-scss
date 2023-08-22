@@ -1,0 +1,104 @@
+$primary: #423629;
+$secondary: #4f5d2f;
+$tertiary: #7d7e75;
+$light: #b0b2b8;
+$dark: #cfd6ea;
+
+.container {
+  margin: 0 auto;
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 430px;
+  }
+  form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  form button:hover {
+    background-color: #0056b3;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
+// header
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: $dark;
+  span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $light;
+  }
+
+  nav a {
+    margin: 2px;
+    font-size: 15px;
+    text-decoration: none;
+    color: $tertiary;
+
+    &:hover {
+      background-color: $light;
+      color: $dark;
+      text-decoration: none;
+    }
+  }
+}
+
+// footer
+footer {
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footer-content {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .footer-content div {
+    display: flex;
+    flex-direction: column;
+    color: $secondary;
+  }
+
+  .footer-content a {
+    text-decoration: none;
+    color: $secondary;
+  }
+
+  p {
+    color: $secondary;
+    font-size: 12px;
+  }
+}
